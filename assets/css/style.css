@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181a1b;
+    color: #e0e0e0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #23272a;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00bcd4;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.section {
+    padding: 4rem 2rem 2rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(30, 32, 34, 0.95);
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.equipo-lista {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    background: #23272a;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    min-width: 180px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #181a1b;
+    color: #888;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+} 
