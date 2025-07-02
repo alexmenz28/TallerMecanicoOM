@@ -3,58 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller Automotriz OMR</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Taller Mecánico OM - Servicios Profesionales de Automóviles</title>
+    <meta name="description" content="Taller mecánico profesional especializado en mantenimiento, reparación y diagnóstico de vehículos. Servicios de calidad con garantía.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">OMR</div>
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#equipo">Equipo</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <section id="inicio" class="section">
-        <h1>Bienvenido a OMR</h1>
-        <p>Tu taller automotriz de confianza. Calidad, rapidez y profesionalismo.</p>
-    </section>
-    <section id="servicios" class="section">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Mecánica general</li>
-            <li>Diagnóstico computarizado</li>
-            <li>Servicio de frenos</li>
-            <li>Revisión y cambio de aceite</li>
-        </ul>
-    </section>
-    <section id="equipo" class="section">
-        <h2>Nuestro Equipo</h2>
-        <div class="equipo-lista">
-            <div class="miembro">
-                <h3>Oscar Martínez</h3>
-                <p>Jefe de Taller</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🔧 Taller Mecánico OM</h1>
             </div>
-            <div class="miembro">
-                <h3>María Rodríguez</h3>
-                <p>Especialista en Diagnóstico</p>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="agendar.html">Agendar</a></li>
+                <li><a href="historial.html">Historial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Tu Vehículo en las Mejores Manos</h2>
+            <p>Especialistas en mantenimiento y reparación automotriz con más de 15 años de experiencia. 
+               Ofrecemos servicios de calidad con tecnología de vanguardia y garantía en todos nuestros trabajos.</p>
+            <div class="hero-buttons">
+                <a href="agendar.html" class="btn-primary">📅 Agendar Cita</a>
+                <a href="servicios.html" class="btn-secondary">🛠️ Ver Servicios</a>
             </div>
-            <div class="miembro">
-                <h3>Raúl Gómez</h3>
-                <p>Mecánico Senior</p>
+        </section>
+
+        <!-- Servicios Destacados -->
+        <section class="featured-services">
+            <h3>Servicios Destacados</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛢️</div>
+                    <h4>Cambio de Aceite</h4>
+                    <p>Mantenimiento preventivo esencial para prolongar la vida útil de tu motor. 
+                       Incluye cambio de filtro y verificación de niveles.</p>
+                    <a href="agendar.html" class="btn-secondary">Agendar</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h4>Diagnóstico Computarizado</h4>
+                    <p>Análisis completo del sistema electrónico de tu vehículo con equipos de última generación 
+                       para identificar problemas precisos.</p>
+                    <a href="agendar.html" class="btn-secondary">Agendar</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛑</div>
+                    <h4>Sistema de Frenos</h4>
+                    <p>Revisión y reparación completa del sistema de frenos para garantizar tu seguridad 
+                       y la de tu familia en cada viaje.</p>
+                    <a href="agendar.html" class="btn-secondary">Agendar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Por qué elegirnos -->
+        <section class="why-choose-us">
+            <h3>¿Por qué Elegirnos?</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⭐</div>
+                    <h4>Experiencia Comprobada</h4>
+                    <p>Más de 15 años en el mercado automotriz con miles de clientes satisfechos.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔧</div>
+                    <h4>Tecnología Avanzada</h4>
+                    <p>Equipos de diagnóstico de última generación para reparaciones precisas.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <h4>Precios Justos</h4>
+                    <p>Tarifas competitivas sin comprometer la calidad del servicio.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">⏰</div>
+                    <h4>Servicio Rápido</h4>
+                    <p>Compromiso con tu tiempo. La mayoría de servicios se completan el mismo día.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h4>Garantía Total</h4>
+                    <p>Todos nuestros trabajos incluyen garantía por escrito en repuestos y mano de obra.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <h4>Equipo Profesional</h4>
+                    <p>Mecánicos certificados y en constante capacitación para brindar el mejor servicio.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadísticas -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Soporte Técnico</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Garantía</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h3>¿Listo para darle el mejor cuidado a tu vehículo?</h3>
+            <p>Agenda tu cita hoy mismo y descubre por qué somos el taller de confianza de miles de conductores.</p>
+            <div class="cta-buttons">
+                <a href="agendar.html" class="btn-primary">📅 Agendar Ahora</a>
+                <a href="historial.html" class="btn-secondary">📋 Consultar Historial</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Taller Mecánico OM</h4>
+                <p>Tu taller de confianza para el cuidado y mantenimiento de tu vehículo.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📞 (555) 123-4567</p>
+                <p>📧 info@tallermecanicoom.com</p>
+                <p>📍 Calle Principal 123, Ciudad</p>
+            </div>
+            <div class="footer-section">
+                <h4>Horarios</h4>
+                <p>Lunes - Viernes: 8:00 AM - 6:00 PM</p>
+                <p>Sábado: 8:00 AM - 2:00 PM</p>
+                <p>Domingo: Cerrado</p>
             </div>
         </div>
-    </section>
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>Dirección: Calle Ficticia 123, Ciudad</p>
-        <p>Teléfono: 555-123-4567</p>
-        <p>Email: contacto@omr.com</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Taller Automotriz OMR. Todos los derechos reservados.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Taller Mecánico OM. Todos los derechos reservados.</p>
+        </div>
     </footer>
-    <script src="./assets/js/main.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html> 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Taller Mecánico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🔧 Taller Mecánico OM</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="agendar.html" class="active">Agendar</a></li>
+                <li><a href="historial.html">Historial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>📅 Agendar tu Cita</h2>
+            <p>Reserva tu servicio de mantenimiento o reparación</p>
+        </section>
+
+        <section class="form-container">
+            <form id="citaForm" action="php/guardar_cita.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="placa">Placa del Vehículo:</label>
+                    <input type="text" id="placa" name="placa" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="marca">Marca del Vehículo:</label>
+                    <input type="text" id="marca" name="marca" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Tipo de Servicio:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="Cambio de aceite">Cambio de aceite</option>
+                        <option value="Frenos">Revisión de frenos</option>
+                        <option value="Suspensión">Suspensión</option>
+                        <option value="Motor">Diagnóstico de motor</option>
+                        <option value="Transmisión">Transmisión</option>
+                        <option value="Electricidad">Sistema eléctrico</option>
+                        <option value="Aire acondicionado">Aire acondicionado</option>
+                        <option value="Otro">Otro servicio</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha de la Cita:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora Preferida:</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Selecciona una hora</option>
+                        <option value="08:00">8:00 AM</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción del Problema (opcional):</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">📅 Confirmar Cita</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taller Mecánico OM. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/agendar.js"></script>
+</body>
+</html> 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Servicios - Taller Mecánico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🔧 Taller Mecánico OM</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="agendar.html">Agendar</a></li>
+                <li><a href="historial.html" class="active">Historial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>📋 Historial de Servicios</h2>
+            <p>Consulta el historial de mantenimientos y reparaciones de tu vehículo</p>
+        </section>
+
+        <section class="search-container">
+            <form id="historialForm">
+                <div class="form-group">
+                    <label for="placaBuscar">Placa del Vehículo:</label>
+                    <input type="text" id="placaBuscar" name="placa" placeholder="Ej: ABC123" required>
+                </div>
+                <button type="submit" class="btn-primary">🔍 Buscar Historial</button>
+            </form>
+        </section>
+
+        <section class="results-container" id="resultados" style="display: none;">
+            <h3>📊 Resultados del Historial</h3>
+            <div class="historial-info">
+                <div class="vehiculo-info">
+                    <h4>Información del Vehículo</h4>
+                    <p><strong>Placa:</strong> <span id="placaVehiculo"></span></p>
+                    <p><strong>Marca:</strong> <span id="marcaVehiculo"></span></p>
+                    <p><strong>Modelo:</strong> <span id="modeloVehiculo"></span></p>
+                </div>
+                
+                <div class="estadisticas">
+                    <h4>📈 Estadísticas</h4>
+                    <p><strong>Total de servicios:</strong> <span id="totalServicios">0</span></p>
+                    <p><strong>Último servicio:</strong> <span id="ultimoServicio">-</span></p>
+                    <p><strong>Servicio más frecuente:</strong> <span id="servicioFrecuente">-</span></p>
+                </div>
+            </div>
+
+            <div class="servicios-lista" id="listaServicios">
+                <!-- Los servicios se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section class="no-results" id="sinResultados" style="display: none;">
+            <div class="message">
+                <h3>🔍 No se encontraron registros</h3>
+                <p>No hay historial de servicios para la placa ingresada.</p>
+                <p>Verifica que la placa sea correcta o agenda tu primera cita.</p>
+                <a href="agendar.html" class="btn-secondary">📅 Agendar Cita</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taller Mecánico OM. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/historial.js"></script>
+</body>
+</html> 
