@@ -7,8 +7,8 @@
 // Configuración de la base de datos
 $host = "localhost";
 $db = "taller";
-$user = "usuario";
-$pass = "clave";
+$user = "taller_user";
+$pass = "taller_password_2024";
 
 // Configuración de zona horaria
 date_default_timezone_set('America/Bogota');
