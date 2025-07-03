@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 /**
  * Archivo para guardar citas en la base de datos
  * Taller Mecánico OM
@@ -17,8 +20,12 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// Log de depuración para ver los datos POST recibidos
+file_put_contents('/tmp/debug_post.txt', print_r($_POST, true));
+
 try {
     // Obtener y sanitizar datos del formulario
+    // Asegúrate de que estos campos coincidan con los del formulario HTML
     $nombre = sanitizeInput($_POST['nombre'] ?? '');
     $telefono = sanitizeInput($_POST['telefono'] ?? '');
     $placa = sanitizeInput($_POST['placa'] ?? '');
@@ -123,11 +130,13 @@ try {
     // Error de base de datos
     error_log("Error de base de datos: " . $e->getMessage());
     http_response_code(500);
-    echo json_encode(['error' => 'Error interno del servidor']);
+    // Mostrar el error real en desarrollo
+    echo json_encode(['error' => $e->getMessage()]);
     
 } catch (Exception $e) {
     // Error de validación o lógica
     http_response_code(400);
+    // Mostrar el error real en desarrollo
     echo json_encode(['error' => $e->getMessage()]);
 }
 ?> 
